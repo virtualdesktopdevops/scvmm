@@ -18,8 +18,6 @@ class scvmm (
   $sourcePath, #UNC path to the root of the source files for installation
   $productkey = '',
   $databaseserver,
-  $domainName,
-  $domainNetbiosName,
   $sqlalwayson = false,
   $sqlavailabilitygroup = '', #Name of the SQL Server Availability group
   $sqldbbackuppath = '',
@@ -30,8 +28,8 @@ class scvmm (
   contain scvmm::install
   contain scvmm::rollupinstall
   contain scvmm::databasehighavailability
-  
+
   Class['::scvmm::serviceaccounts']->
   Class['::scvmm::install']->
   Class['::scvmm::rollupinstall']
-}  
+}
