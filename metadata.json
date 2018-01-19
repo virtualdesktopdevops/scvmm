@@ -1,0 +1,41 @@
+{
+  "author": "citrixdeployment",
+  "dependencies": [
+	{ 
+		"name": "reidmv/unzip", 
+		"version_requirement": ">= 0.1.2"
+	},
+	{ 
+		"name": "puppetlabs/dsc", 
+		"version_requirement": ">= 1.4.0"
+	}
+  ],
+  "license": "Apache-2.0",
+  "name": "citrixdeployment-scvmm",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "Server 2012 R2",
+        "Server 2016"
+      ]
+    }
+  ],
+  "project_page": "https://www.citrixdeployment.com",
+  "requirements": [
+  	{
+      "name": "puppet",
+      "version_requirement": ">= 3.8.0 < 6.0.0"
+    }
+  ],
+  "source": "https://www.citrixdeployment.com",
+  "summary": "System Center Virtual Machine Manager installation and configuration for database high availability",
+  "tags": [
+    "powershell",
+    "dsc",
+    "systemcenter",
+    "microsoft",
+    "scvmm"
+  ],
+  "version": "0.1.0"
+}
